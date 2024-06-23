@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import { useNavigate } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [code, setCode] = useState('')
+  const [count, setCount] = useState(0);
+  const [code, setCode] = useState('');
+
+  const navigate = useNavigate();
 
   const generateCode = () => {
     const mycode = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
@@ -34,13 +37,17 @@ function App() {
         Generate Code
       </button>
 
-      <p className='text-xl text-blue-700/90 font-semibold'>
+      <p className='text-xl text-blue-700/90 font-semibold text-wrap'>
         {code ?? code}
       </p>
 
       <p className="read-the-docs">
         This is a Chrome Extension
       </p>
+
+      <button className='button text-sky-600 font-semibold px-2 py-1' onClick={() => navigate("/login")}>
+        Go to Login
+      </button>
     </div>
   )
 }
