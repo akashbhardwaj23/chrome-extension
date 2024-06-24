@@ -37,12 +37,13 @@ function App() {
         Generate Code
       </button>
 
-      <p className='text-xl text-blue-700/90 font-semibold text-wrap'>
-        {code ?? code}
-      </p>
-
+    {
+      code ?? <p className='text-xl text-blue-700/90 font-semibold text-wrap'>
+      {code}
+    </p>
+    }
       <p className="read-the-docs">
-        This is a Chrome Extension
+        This is a Chrome Extension which generate a random code
       </p>
 
       <button className='button text-sky-600 font-semibold px-2 py-1' onClick={() => navigate("/login")}>
