@@ -4,9 +4,10 @@
     "version": "1.0.0",
     "action": { "default_popup": "index.html" },
     "icons": {
-      "16": "vite.svg",
-      "32": "vite.svg",
-      "48": "vite.svg",
-      "128": "vite.svg"
+      "48": "icon-48.png",
+      "96": "icon-96.png",
+      "192": "icon-192.png",
+      "240": "icon-240.png",
+      "480": "icon-480.png"
     }
   }
