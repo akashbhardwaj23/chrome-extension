@@ -2,6 +2,7 @@
     "manifest_version": 3,
     "name": "Counter",
     "version": "1.0.0",
+    "description": "A simple counter Extension for everyone of you",
     "action": { "default_popup": "index.html" },
     "icons": {
       "48": "icon-48.png",
