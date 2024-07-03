@@ -10,12 +10,10 @@ function App() {
 
   const generateCode = () => {
     const mycode = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-    
     let thisCode = "";
     for(let i = 0; i < mycode.length; i++){
       thisCode += mycode.charAt(Math.floor(Math.random() * mycode.length));
     }
-
     setCode(thisCode);
   }
 
@@ -46,7 +44,7 @@ function App() {
         This is a Chrome Extension which generate a random code
       </p>
 
-      <button className='button text-sky-600 font-semibold px-2 py-1' onClick={() => navigate("/")}>
+      <button className='button text-sky-600 font-semibold px-2 py-1' onClick={() => navigate("/login")}>
         Go to Login
       </button>
     </div>
